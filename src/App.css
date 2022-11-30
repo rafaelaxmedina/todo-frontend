@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #DFEA93;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list {
+  padding: 10px;
+  border: 2px solid #000;
+  margin-top: 50px;
+  width: 700px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.note-purchase {  
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note {
+  height: 20px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.write {
+  height: 20px;
+  margin-right: 10px;
+  width: 350px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.buy-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.text {
+  margin-left: 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.buylist-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-edit,
+.edit,
+.delete {
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
 }
